@@ -1,11 +1,17 @@
 import React from "react";
 
-import { Container } from "./style";
+import { Container, Header, Title, BackButton, ContentContainer } from "./style";
 
 function ChatPage(props) {
     return (
         <Container>
-            ChatPage
+            <Header>
+                <BackButton>&lt;</BackButton>
+                <Title>순이와의 대화</Title>
+            </Header>
+            <ContentContainer>
+
+            </ContentContainer>
         </Container>
     );
 }
