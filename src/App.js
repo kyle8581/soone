@@ -24,7 +24,7 @@ function App() {
                 {/* Change user */}
                 <Route exact path="/users" component={ChangePage}/>
 
-                <Route component={() => <Redirect to="/1/summary"/>}/>
+                <Route component={() => <Redirect to="/228/summary"/>}/>
             </Switch>
         </Router>
     );
