@@ -1,9 +1,12 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import { Container, Header, Title, BackButton, ContentContainer } from "./style";
 import Chatbox from "../../components/Chatbox";
 
 function ChatPage(props) {
+    const { id } = useParams();
+    
     return (
         <Container>
             <Header>

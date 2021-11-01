@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import { Container, ContentContainer } from "./style";
 import Header from "../../components/Header";
@@ -6,9 +7,11 @@ import BigCard from "../../components/BigCard";
 import Tab from "../../components/Tab";
 
 function AnalysisPage(props) {
+    const { id } = useParams();
+
     return (
         <Container>
-            <Header user="456"/>
+            <Header user={id}/>
             <ContentContainer>
                 <BigCard title="수면">
                     Content

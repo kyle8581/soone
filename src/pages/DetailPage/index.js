@@ -1,9 +1,12 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import { Container, Header, Title, BackButton, ContentContainer } from "./style";
 import BigCard from "../../components/BigCard";
 
 function DetailPage(props) {
+    const { id } = useParams();
+    
     return (
         <Container>
             <Header>

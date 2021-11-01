@@ -12,15 +12,15 @@ function App() {
         <Router>
             <Switch>
                 {/* Home */}
-                <Route exact path="/" component={SummaryPage}/>
-                <Route exact path="/analysis" component={AnalysisPage}/>
-                <Route exact path="/rank" component={RankPage}/>
+                <Route exact path="/:id/summary" component={SummaryPage}/>
+                <Route exact path="/:id/analysis" component={AnalysisPage}/>
+                <Route exact path="/:id/rank" component={RankPage}/>
 
                 {/* Detail */}
-                <Route exact path="/detail/:habit" component={DetailPage}/>
-                <Route exact path="/chat" component={ChatPage}/>
+                <Route exact path="/:id/detail/:habit" component={DetailPage}/>
+                <Route exact path="/:id/chat" component={ChatPage}/>
 
-                <Route component={() => <Redirect to="/"/>}/>
+                <Route component={() => <Redirect to="/1/summary"/>}/>
             </Switch>
         </Router>
     );

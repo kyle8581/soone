@@ -1,4 +1,5 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 
 import { Container, ContentContainer } from "./style";
 import Header from "../../components/Header";
@@ -7,9 +8,11 @@ import BigCard from "../../components/BigCard";
 import Tab from "../../components/Tab";
 
 function SummaryPage(props) {
+    const { id } = useParams();
+
     return (
         <Container>
-            <Header user="456"/>
+            <Header user={id}/>
             <ContentContainer>
                 <SmallCard title="수면" score={70} message="가끔 새벽에 늦게 주무시는 것을 피하시면 더 좋은 수면 습관을 가지실 수 있을 거에요!"/>
                 <SmallCard title="식사" score={89} message="아침, 점심, 저녁 잘 챙겨드시고 꽤 규칙적인 식사 습관을 가지고 있어요!"/>
