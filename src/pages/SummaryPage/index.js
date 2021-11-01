@@ -1,7 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { convertArray } from "../../util/TitleConverter";
 
-import { Container, ContentContainer } from "./style";
+import { Container, ContentContainer, Row, Title, Description } from "./style";
 import Header from "../../components/Header";
 import SmallCard from "../../components/SmallCard";
 import BigCard from "../../components/BigCard";
@@ -24,6 +25,10 @@ function SummaryPage(props) {
         { habit: '활동', me: 70, all: 52 },
     ];
 
+    // Title
+    const titleData = require('../../default/extra/title.json');
+    const convertedTitleData = convertArray(titleData);
+
     return (
         <Container>
             <Header user={id}/>
@@ -36,7 +41,14 @@ function SummaryPage(props) {
                 <SmallCard title="약 복용" score={38} message="" onClick={() => goDetail('5')}/>
                 <SmallCard title="활동" score={70} message="" onClick={() => goDetail('6')}/>
                 <BigCard title="타이틀">
-                    Content
+                    {
+                        convertedTitleData.map((title, index) => (
+                            <Row key={index}>
+                                <Title>{title[0]}</Title>
+                                <Description>{title[1]}</Description>
+                            </Row>
+                        ))
+                    }
                 </BigCard>
                 <BigCard title="순이와의 대화" onClick={() => props.history.push(`/${id}/chat`)}>
                     Content
