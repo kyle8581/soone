@@ -1,3 +1,5 @@
+import { withRouter } from "react-router-dom";
+
 import styled from "styled-components";
 import RoundButton from "./RoundButton";
 
@@ -5,12 +7,12 @@ function Header(props) {
     return (
         <Container>
             <Title>{props.user}번님,<br/>안녕하세요!</Title>
-            <RoundButton>사용자 전환</RoundButton>
+            <RoundButton onClick={() => props.history.push('/users')}>사용자 전환</RoundButton>
         </Container>
     );
 }
 
-export default Header;
+export default withRouter(Header);
 
 const Container = styled.div`
     display: flex;

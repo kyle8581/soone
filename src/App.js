@@ -6,6 +6,7 @@ import AnalysisPage from "./pages/AnalysisPage/index";
 import RankPage from "./pages/RankPage/index";
 import DetailPage from "./pages/DetailPage/index";
 import ChatPage from "./pages/ChatPage/index";
+import ChangePage from "./pages/ChangePage";
 
 function App() {
     return (
@@ -19,6 +20,9 @@ function App() {
                 {/* Detail */}
                 <Route exact path="/:id/detail/:habit" component={DetailPage}/>
                 <Route exact path="/:id/chat" component={ChatPage}/>
+
+                {/* Change user */}
+                <Route exact path="/users" component={ChangePage}/>
 
                 <Route component={() => <Redirect to="/1/summary"/>}/>
             </Switch>
