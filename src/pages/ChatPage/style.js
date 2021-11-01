@@ -33,7 +33,7 @@ export const BackButton = styled.button`
 
 export const ContentContainer = styled.div`
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     justify-content: center;
     padding: 30px;
     box-sizing: border-box;
