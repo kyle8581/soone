@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function SmallCard(props) {
     return (
-        <Container>
+        <Container onClick={props.onClick}>
             <Title>{props.title}</Title>
             <Score score={props.score}>{props.score}점</Score>
             <Content>{props.message}</Content>

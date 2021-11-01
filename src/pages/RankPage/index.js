@@ -17,7 +17,7 @@ function RankPage(props) {
                     Content
                 </BigCard>
             </ContentContainer>
-            <Tab selected={2}/>
+            <Tab id={id} selected={2}/>
         </Container>
     );
 }

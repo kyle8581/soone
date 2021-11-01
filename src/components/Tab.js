@@ -1,17 +1,19 @@
+import { withRouter } from "react-router-dom";
+
 import styled from "styled-components";
 import TabButton from "./TabButton";
 
 function Tab(props) {
     return (
         <Container>
-            <TabButton disabled={props.selected === 0}>요약</TabButton>
-            <TabButton disabled={props.selected === 1}>분석</TabButton>
-            <TabButton disabled={props.selected === 2}>순위</TabButton>
+            <TabButton onClick={() => props.history.replace(`/${props.id}/summary`)} disabled={props.selected === 0}>요약</TabButton>
+            <TabButton onClick={() => props.history.replace(`/${props.id}/analysis`)} disabled={props.selected === 1}>분석</TabButton>
+            <TabButton onClick={() => props.history.replace(`/${props.id}/rank`)} disabled={props.selected === 2}>순위</TabButton>
         </Container>
     );
 }
 
-export default Tab;
+export default withRouter(Tab);
 
 const Container = styled.div`
     width: 100%;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 function BigCard(props) {
     return (
-        <Container>
+        <Container onClick={props.onClick}>
             <Title>{props.title}</Title>
             <Content>{props.children}</Content>
         </Container>

@@ -6,11 +6,13 @@ import BigCard from "../../components/BigCard";
 
 function DetailPage(props) {
     const { id } = useParams();
+
+    const goBack = () => props.history.goBack();
     
     return (
         <Container>
             <Header>
-                <BackButton>&lt;</BackButton>
+                <BackButton onClick={goBack}>&lt;</BackButton>
                 <Title>수면</Title>
             </Header>
             <ContentContainer>

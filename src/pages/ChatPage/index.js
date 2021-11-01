@@ -6,11 +6,13 @@ import Chatbox from "../../components/Chatbox";
 
 function ChatPage(props) {
     const { id } = useParams();
+
+    const goBack = () => props.history.goBack();
     
     return (
         <Container>
             <Header>
-                <BackButton>&lt;</BackButton>
+                <BackButton onClick={goBack}>&lt;</BackButton>
                 <Title>순이와의 대화</Title>
             </Header>
             <ContentContainer>
