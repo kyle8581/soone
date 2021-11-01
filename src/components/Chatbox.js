@@ -4,8 +4,8 @@ import { IoMdHappy, IoMdSad } from "react-icons/io";
 function Chatbox(props) {
     return (
         <Container counter={props.counter}>
-            {props.counter && props.emotion == "HAPPY" && <IoMdHappy size="2rem"/>}
-            {props.counter && props.emotion == "SAD" && <IoMdSad size="2rem"/>}
+            {props.counter && props.emotion === "HAPPY" && <IoMdHappy size="2rem"/>}
+            {props.counter && props.emotion === "SAD" && <IoMdSad size="2rem"/>}
             <Content>{props.message}</Content>
         </Container>
     );
