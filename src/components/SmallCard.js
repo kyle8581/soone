@@ -13,7 +13,7 @@ function SmallCard(props) {
 export default SmallCard;
 
 const checkScore = (score) => {
-    if (score >= 80) return "blue";
+    if (score >= 80) return "#4c9be0";
     if (score >= 50) return "green";
     return "red";
 };
