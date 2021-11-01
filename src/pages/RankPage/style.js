@@ -18,7 +18,12 @@ export const Row = styled.div`
     margin-top: 10px;
     padding-bottom: 10px;
     box-sizing: border-box;
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #00000020;
+
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
 `
 export const Rank = styled.p`
     margin: 0;
