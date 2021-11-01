@@ -7,6 +7,9 @@ import Chatbox from "../../components/Chatbox";
 function ChatPage(props) {
     const { id } = useParams();
 
+    // Chat data
+    const chat = require('../../default/chat/conversation.json');
+
     const goBack = () => props.history.goBack();
     
     return (
@@ -16,12 +19,12 @@ function ChatPage(props) {
                 <Title>순이와의 대화</Title>
             </Header>
             <ContentContainer>
-                <Chatbox message="안녕하세요!" counter emotion="HAPPY"/>
-                <Chatbox message="안녕하세요!"/>
-                <Chatbox message="안녕하세요!" counter emotion="SAD"/>
-                <Chatbox message="안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요!"/>
-                <Chatbox message="안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요! 안녕하세요!" counter emotion="HAPPY"/>
-                <Chatbox message="안녕하세요!"/>
+                {
+                    chat.map((msg, index) => msg.speaker === 0 
+                        ? <Chatbox key={index} message={msg.content} counter emotion="HAPPY"/>
+                        : <Chatbox key={index} message={msg.content}/>
+                    )
+                }
             </ContentContainer>
         </Container>
     );
