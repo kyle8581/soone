@@ -4,9 +4,8 @@ import { useParams } from "react-router-dom";
 import { Container, Header, Title, BackButton, ContentContainer } from "./style";
 import BigCard from "../../components/BigCard";
 
-function DetailPage(props) {
-    const { id, habit } = useParams();
-    const titles = ['수면', '식사', '배변', '운동', '약 복용', '활동'];
+function MedicineDetail(props) {
+    const { id } = useParams();
 
     const goBack = () => props.history.goBack();
     
@@ -14,7 +13,7 @@ function DetailPage(props) {
         <Container>
             <Header>
                 <BackButton onClick={goBack}>&lt;</BackButton>
-                <Title>{titles[habit - 1] || "알 수 없는 습관"}</Title>
+                <Title>약 복용</Title>
             </Header>
             <ContentContainer>
                 <BigCard title="일별 기록">
@@ -28,4 +27,4 @@ function DetailPage(props) {
     );
 }
 
-export default DetailPage;
+export default MedicineDetail;

@@ -4,9 +4,15 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import SummaryPage from "./pages/SummaryPage/index";
 import AnalysisPage from "./pages/AnalysisPage/index";
 import RankPage from "./pages/RankPage/index";
-import DetailPage from "./pages/DetailPage/index";
 import ChatPage from "./pages/ChatPage/index";
 import ChangePage from "./pages/ChangePage";
+
+import SleepDetail from "./pages/DetailPage/SleepDetail";
+import MealDetail from "./pages/DetailPage/MealDetail";
+import ToiletDetail from "./pages/DetailPage/ToiletDetail";
+import ExerciseDetail from "./pages/DetailPage/ExerciseDetail";
+import MedicineDetail from "./pages/DetailPage/MedicineDetail";
+import ActivityDetail from "./pages/DetailPage/ActivityDetail";
 
 function App() {
     return (
@@ -18,7 +24,12 @@ function App() {
                 <Route exact path="/:id/rank" component={RankPage}/>
 
                 {/* Detail */}
-                <Route exact path="/:id/detail/:habit" component={DetailPage}/>
+                <Route exact path="/:id/detail/sleep" component={SleepDetail}/>
+                <Route exact path="/:id/detail/meal" component={MealDetail}/>
+                <Route exact path="/:id/detail/toilet" component={ToiletDetail}/>
+                <Route exact path="/:id/detail/exercise" component={ExerciseDetail}/>
+                <Route exact path="/:id/detail/medicine" component={MedicineDetail}/>
+                <Route exact path="/:id/detail/activity" component={ActivityDetail}/>
                 <Route exact path="/:id/chat" component={ChatPage}/>
 
                 {/* Change user */}

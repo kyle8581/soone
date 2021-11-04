@@ -49,12 +49,12 @@ function SummaryPage(props) {
             <Header user={id}/>
             <ContentContainer>
                 <RadarChartComp data={scoreGraphData}/>
-                <SmallCard title="수면" score={sleepScore} message={sleepMessage} onClick={() => goDetail('1')}/>
-                <SmallCard title="식사" score={mealScore} message={mealMessage} onClick={() => goDetail('2')}/>
-                <SmallCard title="배변" score={toiletScore} message={toiletMessage} onClick={() => goDetail('3')}/>
-                <SmallCard title="운동" score={exerciseScore} message={exerciseMessage} onClick={() => goDetail('4')}/>
-                <SmallCard title="약 복용" score={medicineScore} message={medicineMessage} onClick={() => goDetail('5')}/>
-                <SmallCard title="활동" score={activityScore} message={activityMessage} onClick={() => goDetail('6')}/>
+                <SmallCard title="수면" score={sleepScore} message={sleepMessage} onClick={() => goDetail('sleep')}/>
+                <SmallCard title="식사" score={mealScore} message={mealMessage} onClick={() => goDetail('meal')}/>
+                <SmallCard title="배변" score={toiletScore} message={toiletMessage} onClick={() => goDetail('toilet')}/>
+                <SmallCard title="운동" score={exerciseScore} message={exerciseMessage} onClick={() => goDetail('exercise')}/>
+                <SmallCard title="약 복용" score={medicineScore} message={medicineMessage} onClick={() => goDetail('medicine')}/>
+                <SmallCard title="활동" score={activityScore} message={activityMessage} onClick={() => goDetail('activity')}/>
                 <BigCard title="타이틀">
                     {
                         titleData.map((title, index) => (
