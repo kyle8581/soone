@@ -1,6 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
+import { getRankData } from "../../util/DataParser";
+
 import { Container, ContentContainer, Row, Rank, Detail } from "./style";
 import Header from "../../components/Header";
 import BigCard from "../../components/BigCard";
@@ -10,7 +12,7 @@ function RankPage(props) {
     const { id } = useParams();
 
     // Rank data
-    const rank = require('../../default/extra/rank.json');
+    const rankData = getRankData(id);
 
     return (
         <Container>
@@ -18,7 +20,7 @@ function RankPage(props) {
             <ContentContainer>
                 <BigCard title="전체 순위">
                     {
-                        rank.map((user, index) => (
+                        rankData.map((user, index) => (
                             <Row key={index}>
                                 <Rank checked={id * 1 === user}>{index + 1}위</Rank>
                                 <Detail checked={id * 1 === user}>{user}번</Detail>
