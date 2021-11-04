@@ -3,12 +3,13 @@ import { useParams } from "react-router-dom";
 
 import { Container, Header, Title, BackButton, ContentContainer } from "./style";
 import Chatbox from "../../components/Chatbox";
+import { getChatData } from "../../util/DataParser";
 
 function ChatPage(props) {
     const { id } = useParams();
 
     // Chat data
-    const chat = require('../../default/chat/conversation.json');
+    const chat = getChatData(id).conversation;
 
     const goBack = () => props.history.goBack();
     
