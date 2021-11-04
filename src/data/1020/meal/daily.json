@@ -1,0 +1,167 @@
+[
+    [
+        {
+            "brkfst": NaN,
+            "lnch": 13.616666666666667,
+            "dnr": 18.116666666666667
+        },
+        {
+            "brkfst": 6.75,
+            "lnch": 15.366666666666667,
+            "dnr": 17.966666666666665
+        },
+        {
+            "brkfst": 8.483333333333333,
+            "lnch": 12.466666666666667,
+            "dnr": 17.85
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        }
+    ],
+    [
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        }
+    ],
+    [
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": 14.266666666666667,
+            "dnr": 18.366666666666667
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": 18.4
+        },
+        {
+            "brkfst": 10.883333333333333,
+            "lnch": 13.266666666666667,
+            "dnr": 19.9
+        },
+        {
+            "brkfst": 10.733333333333333,
+            "lnch": 13.45,
+            "dnr": 20.483333333333334
+        },
+        {
+            "brkfst": 11.466666666666667,
+            "lnch": 11.466666666666667,
+            "dnr": 18.95
+        }
+    ],
+    [
+        {
+            "brkfst": 7.65,
+            "lnch": 12.233333333333333,
+            "dnr": 20.7
+        },
+        {
+            "brkfst": 6.733333333333333,
+            "lnch": 13.766666666666667,
+            "dnr": 20.1
+        },
+        {
+            "brkfst": 8.016666666666667,
+            "lnch": 12.366666666666667,
+            "dnr": 19.783333333333335
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": 19.633333333333333
+        },
+        {
+            "brkfst": 8.716666666666667,
+            "lnch": 12.15,
+            "dnr": 16.316666666666666
+        },
+        {
+            "brkfst": 11.2,
+            "lnch": 11.2,
+            "dnr": 18.85
+        },
+        {
+            "brkfst": 6.15,
+            "lnch": NaN,
+            "dnr": 19.133333333333333
+        }
+    ],
+    [
+        {
+            "brkfst": 10.15,
+            "lnch": NaN,
+            "dnr": 18.283333333333335
+        },
+        {
+            "brkfst": NaN,
+            "lnch": 12.866666666666667,
+            "dnr": 19.966666666666665
+        },
+        {
+            "brkfst": 6.366666666666666,
+            "lnch": 14.5,
+            "dnr": 17.583333333333332
+        }
+    ]
+]

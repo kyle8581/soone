@@ -1,0 +1,167 @@
+[
+    [
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 6.916666666666667,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 11.25,
+            "lnch": 11.25,
+            "dnr": 20.733333333333334
+        },
+        {
+            "brkfst": 7.466666666666667,
+            "lnch": 15.833333333333334,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 7.166666666666667,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 6.416666666666667,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 7.016666666666667,
+            "lnch": 13.183333333333334,
+            "dnr": NaN
+        }
+    ],
+    [
+        {
+            "brkfst": 6.883333333333333,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 7.066666666666666,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": 12.516666666666667,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": 14.55,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 7.366666666666666,
+            "lnch": 15.133333333333333,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 7.65,
+            "lnch": 15.983333333333333,
+            "dnr": NaN
+        }
+    ],
+    [
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": 8.066666666666666,
+            "lnch": 13.616666666666667,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        }
+    ],
+    [
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": 14.583333333333334,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": 12.45,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        }
+    ],
+    [
+        {
+            "brkfst": NaN,
+            "lnch": 12.933333333333334,
+            "dnr": NaN
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": 18.35
+        },
+        {
+            "brkfst": NaN,
+            "lnch": NaN,
+            "dnr": NaN
+        }
+    ]
+]
