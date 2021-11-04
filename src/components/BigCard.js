@@ -21,13 +21,6 @@ const Container = styled.div`
     border-radius: 15px;
     box-shadow: 0 0 10px #00000020;
     background-color: white;
-
-    &:hover {
-        opacity: 0.5;
-    }
-    &:active {
-        opacity: 0.3;
-    }
 `
 const Title = styled.h2`
     margin: 0;

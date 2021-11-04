@@ -53,3 +53,9 @@ export const Row = styled.div`
         border-bottom: none;
     }
 `
+
+export const Column = styled.div`
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+`

@@ -35,3 +35,14 @@ export const getScoreGraphData = (id) => {
 
     return scoreData;
 };
+
+export const getSleepDailyGraphData = (id, week) => {
+    const sleepDailyData = getSleepData(id).daily;
+
+    const selectedData = sleepDailyData[week];
+    const graphData = selectedData.map((data, index) => {
+        return { day: `${week * 7 + index + 1}일`, start: data.down, length: data.length };
+    });
+
+    return graphData;
+};
