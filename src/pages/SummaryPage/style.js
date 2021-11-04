@@ -34,3 +34,16 @@ export const Description = styled.p`
     font-size: 0.7rem;
     color: black;
 `
+
+export const Column = styled.div`
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+`
+export const Message = styled.p`
+    flex: 1 1 0;
+    margin: 0 0 0 10px;
+    font-size: 0.8rem;
+    color: black;
+    text-align: center;
+`

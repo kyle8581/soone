@@ -1,21 +1,28 @@
-import { getActivityData, getSleepData } from "./DataParser";
+import { getActivityData, getExerciseData, getMealData, getMedicineData, getSleepData, getToiletData } from "./DataParser";
 
 export const getScoreGraphData = (id) => {
-    // 개별 데이터
-    const sleepScore = getSleepData(id).summary.score;
-    const mealScore = 88;  // Temp
-    const toiletScore = 60;  // Temp
-    const exerciseScore = 95;  // Temp
-    const medicineScore = 38;  // Temp
-    const activityScore = getActivityData(id).summary[0].ac_score;
+    const sleepData = getSleepData(id);
+    const mealData = getMealData(id);
+    const toiletData = getToiletData(id);
+    const exerciseData = getExerciseData(id);
+    const medicineData = getMedicineData(id);
+    const activityData = getActivityData(id);
 
-    // 전체 데이터
-    const sleepScoreAll = getSleepData(id).all.score;
-    const mealScoreAll = 78;  // Temp
-    const toiletScoreAll = 55;  // Temp
-    const exerciseScoreAll = 40;  // Temp
-    const medicineScoreAll = 62;  // Temp
-    const activityScoreAll = getActivityData(id).all[0].ac_score;
+    // 개별 점수
+    const sleepScore = sleepData.summary.score;
+    const mealScore = mealData.summary.score;
+    const toiletScore = toiletData.summary.score;
+    const exerciseScore = exerciseData.summary.score;
+    const medicineScore = medicineData.summary.score;
+    const activityScore = activityData.summary[0].ac_score;
+
+    // 전체 점수
+    const sleepScoreAll = sleepData.all.score;
+    const mealScoreAll = mealData.all.score;
+    const toiletScoreAll = toiletData.all.score;
+    const exerciseScoreAll = exerciseData.all.score;
+    const medicineScoreAll = medicineData.all.score;
+    const activityScoreAll = activityData.all[0].ac_score;
 
     const scoreData = [
         { habit: '수면', me: sleepScore, all: sleepScoreAll },
