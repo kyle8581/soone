@@ -1,11 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import { Container, Header, Title, BackButton, ContentContainer } from "./style";
+import { getExerciseData } from "../../util/DataParser";
+
+import { Container, Header, Title, BackButton, ContentContainer, Row } from "./style";
 import BigCard from "../../components/BigCard";
 
 function ExerciseDetail(props) {
     const { id } = useParams();
+
+    const outlier = getExerciseData(id).outlier;
 
     const goBack = () => props.history.goBack();
     
@@ -19,8 +23,8 @@ function ExerciseDetail(props) {
                 <BigCard title="일별 기록">
                     Content
                 </BigCard>
-                <BigCard title="이상치">
-                    Content
+                <BigCard title="평소와 달리 운동을 하지 않은 날">
+                    {outlier.map((day, index) => <Row key={index}>{day}일</Row>)}
                 </BigCard>
             </ContentContainer>
         </Container>

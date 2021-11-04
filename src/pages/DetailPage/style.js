@@ -39,3 +39,17 @@ export const ContentContainer = styled.div`
     box-sizing: border-box;
     gap: 30px;
 `
+
+export const Row = styled.div`
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #00000020;
+
+    &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+`

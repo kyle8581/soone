@@ -1,11 +1,15 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
+import { getActivityData } from "../../util/DataParser";
+
 import { Container, Header, Title, BackButton, ContentContainer } from "./style";
 import BigCard from "../../components/BigCard";
 
 function ActivityDetail(props) {
     const { id } = useParams();
+
+    const sooneActivity = getActivityData(id).sooneSummary;
 
     const goBack = () => props.history.goBack();
     
