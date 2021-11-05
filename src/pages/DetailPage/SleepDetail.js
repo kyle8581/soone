@@ -6,7 +6,7 @@ import { getSleepDailyGraphData } from "../../util/GraphDataGenerator";
 
 import { Container, Header, Title, BackButton, ContentContainer, Row, Column } from "./style";
 import BigCard from "../../components/BigCard";
-import BarChartComp from "../../graph/BarChartComp";
+import TimeBarChartComp from "../../graph/TimeBarChartComp";
 import WeekSelector from "../../components/WeekSelector";
 
 function SleepDetail(props) {
@@ -27,7 +27,7 @@ function SleepDetail(props) {
             <ContentContainer>
                 <BigCard title="일별 기록">
                     <Column>
-                        <BarChartComp data={sleepDailyGraphData}/>
+                        <TimeBarChartComp data={sleepDailyGraphData}/>
                         <WeekSelector week={week} setWeek={setWeek}/>
                     </Column>
                 </BigCard>

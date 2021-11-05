@@ -1,6 +1,6 @@
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 
-function BarChartComp(props) {
+function TimeBarChartComp(props) {
     const formatYAxis = (value) => {
         if (value === 24) return "0시";
         if (value === 25) return "1시";
@@ -28,4 +28,4 @@ function BarChartComp(props) {
     )
 }
 
-export default BarChartComp;
+export default TimeBarChartComp;

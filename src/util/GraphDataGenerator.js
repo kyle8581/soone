@@ -46,3 +46,14 @@ export const getSleepDailyGraphData = (id, week) => {
 
     return graphData;
 };
+
+export const getToiletDailyGraphData = (id, week) => {
+    const toiletDailyData = getToiletData(id).daily;
+
+    const selectedData = toiletDailyData[week];
+    const graphData = selectedData.map((data, index) => {
+        return { day: `${week * 7 + index + 1}일`, count: data.length };
+    });
+
+    return graphData;
+};
