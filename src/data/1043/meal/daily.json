@@ -1,140 +1,140 @@
 [
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         }
     ],
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
             "brkfst": 8.216666666666667,
-            "lnch": NaN,
-            "dnr": NaN
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         }
     ],
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         }
     ],
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
+            "brkfst": null,
+            "lnch": null,
             "dnr": 18.116666666666667
         },
         {
             "brkfst": 10.1,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 19.066666666666666
         },
         {
             "brkfst": 8.483333333333333,
-            "lnch": NaN,
-            "dnr": NaN
+            "lnch": null,
+            "dnr": null
         },
         {
             "brkfst": 9.183333333333334,
@@ -144,24 +144,24 @@
         {
             "brkfst": 8.45,
             "lnch": 13.083333333333334,
-            "dnr": NaN
+            "dnr": null
         }
     ],
     [
         {
             "brkfst": 8.516666666666667,
             "lnch": 15.616666666666667,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 8.833333333333334,
-            "lnch": NaN,
-            "dnr": NaN
+            "lnch": null,
+            "dnr": null
         },
         {
             "brkfst": 9.783333333333333,
             "lnch": 12.433333333333334,
-            "dnr": NaN
+            "dnr": null
         }
     ]
 ]

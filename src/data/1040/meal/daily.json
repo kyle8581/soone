@@ -2,7 +2,7 @@
     [
         {
             "brkfst": 7.566666666666666,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 17.383333333333333
         },
         {
@@ -12,8 +12,8 @@
         },
         {
             "brkfst": 6.7,
-            "lnch": NaN,
-            "dnr": NaN
+            "lnch": null,
+            "dnr": null
         },
         {
             "brkfst": 6.8,
@@ -22,71 +22,71 @@
         },
         {
             "brkfst": 7.366666666666666,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 17.2
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         }
     ],
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         }
     ],
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
+            "brkfst": null,
+            "lnch": null,
             "dnr": 16.966666666666665
         },
         {
@@ -97,7 +97,7 @@
         {
             "brkfst": 8.666666666666666,
             "lnch": 15.55,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 6.616666666666667,
@@ -106,7 +106,7 @@
         },
         {
             "brkfst": 6.933333333333334,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 17.483333333333334
         }
     ],
@@ -114,7 +114,7 @@
         {
             "brkfst": 10.883333333333333,
             "lnch": 12.116666666666667,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 11.666666666666666,
@@ -123,7 +123,7 @@
         },
         {
             "brkfst": 6.733333333333333,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 17.683333333333334
         },
         {
@@ -144,18 +144,18 @@
         {
             "brkfst": 11.75,
             "lnch": 11.75,
-            "dnr": NaN
+            "dnr": null
         }
     ],
     [
         {
             "brkfst": 8.55,
             "lnch": 12.066666666666666,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 7.45,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 16.883333333333333
         },
         {

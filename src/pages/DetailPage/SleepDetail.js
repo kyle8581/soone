@@ -37,9 +37,6 @@ function SleepDetail(props) {
                 <BigCard title="밤에 늦게 잔 날">
                     {outlier.down.map((day, index) => <Row key={index}>{day}일</Row>)}
                 </BigCard>
-                <BigCard title="수면 시간이 평소와 달랐던 날">
-                    {outlier.length.map((day, index) => <Row key={index}>{day}일</Row>)}
-                </BigCard>
             </ContentContainer>
         </Container>
     );

@@ -2,7 +2,7 @@
     [
         {
             "brkfst": 7.366666666666666,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 18.6
         },
         {
@@ -33,23 +33,23 @@
         {
             "brkfst": 9.766666666666667,
             "lnch": 13.6,
-            "dnr": NaN
+            "dnr": null
         }
     ],
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
             "brkfst": 9.166666666666666,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 20.2
         },
         {
@@ -96,7 +96,7 @@
         },
         {
             "brkfst": 7.6,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 18.833333333333332
         },
         {
@@ -124,26 +124,26 @@
         {
             "brkfst": 8.566666666666666,
             "lnch": 12.0,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 8.016666666666667,
             "lnch": 14.266666666666667,
-            "dnr": NaN
+            "dnr": null
         },
         {
-            "brkfst": NaN,
+            "brkfst": null,
             "lnch": 12.433333333333334,
             "dnr": 18.25
         },
         {
             "brkfst": 10.933333333333334,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 19.116666666666667
         },
         {
             "brkfst": 8.4,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 18.35
         }
     ],
@@ -156,11 +156,11 @@
         {
             "brkfst": 8.083333333333334,
             "lnch": 15.35,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 7.7,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 18.783333333333335
         }
     ]

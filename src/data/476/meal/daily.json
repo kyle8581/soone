@@ -6,7 +6,7 @@
             "dnr": 18.2
         },
         {
-            "brkfst": NaN,
+            "brkfst": null,
             "lnch": 13.166666666666666,
             "dnr": 20.283333333333335
         },
@@ -17,7 +17,7 @@
         },
         {
             "brkfst": 8.333333333333334,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 19.533333333333335
         },
         {
@@ -49,7 +49,7 @@
         },
         {
             "brkfst": 9.8,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 18.1
         },
         {
@@ -82,7 +82,7 @@
         {
             "brkfst": 9.4,
             "lnch": 13.85,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 10.516666666666667,
@@ -96,13 +96,13 @@
         },
         {
             "brkfst": 8.966666666666667,
-            "lnch": NaN,
-            "dnr": NaN
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
             "brkfst": 9.05,
@@ -114,7 +114,7 @@
         {
             "brkfst": 10.5,
             "lnch": 15.383333333333333,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 11.233333333333333,
@@ -124,7 +124,7 @@
         {
             "brkfst": 10.783333333333333,
             "lnch": 13.733333333333333,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 11.85,

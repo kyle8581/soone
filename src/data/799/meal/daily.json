@@ -1,0 +1,167 @@
+[
+    [
+        {
+            "brkfst": null,
+            "lnch": 15.45,
+            "dnr": 20.983333333333334
+        },
+        {
+            "brkfst": 11.133333333333333,
+            "lnch": 14.783333333333333,
+            "dnr": null
+        },
+        {
+            "brkfst": 11.816666666666666,
+            "lnch": 13.816666666666666,
+            "dnr": null
+        },
+        {
+            "brkfst": 11.7,
+            "lnch": 13.7,
+            "dnr": 19.65
+        },
+        {
+            "brkfst": 11.933333333333334,
+            "lnch": 13.0,
+            "dnr": 19.5
+        },
+        {
+            "brkfst": 11.15,
+            "lnch": 13.1,
+            "dnr": 20.333333333333332
+        },
+        {
+            "brkfst": 11.733333333333333,
+            "lnch": 11.733333333333333,
+            "dnr": null
+        }
+    ],
+    [
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        }
+    ],
+    [
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        }
+    ],
+    [
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        },
+        {
+            "brkfst": 11.35,
+            "lnch": 11.35,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
+        }
+    ],
+    [
+        {
+            "brkfst": 10.416666666666666,
+            "lnch": 15.5,
+            "dnr": 18.033333333333335
+        },
+        {
+            "brkfst": 11.666666666666666,
+            "lnch": 11.666666666666666,
+            "dnr": null
+        },
+        {
+            "brkfst": null,
+            "lnch": 12.516666666666667,
+            "dnr": 18.766666666666666
+        }
+    ]
+]

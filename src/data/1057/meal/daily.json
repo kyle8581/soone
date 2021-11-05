@@ -16,31 +16,31 @@
             "dnr": 19.766666666666666
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         }
     ],
     [
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         },
         {
             "brkfst": 9.483333333333333,
@@ -70,13 +70,13 @@
         {
             "brkfst": 7.866666666666667,
             "lnch": 12.05,
-            "dnr": NaN
+            "dnr": null
         }
     ],
     [
         {
             "brkfst": 7.8,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 19.35
         },
         {
@@ -102,7 +102,7 @@
         {
             "brkfst": 11.9,
             "lnch": 11.9,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 8.45,
@@ -114,7 +114,7 @@
         {
             "brkfst": 11.516666666666667,
             "lnch": 11.516666666666667,
-            "dnr": NaN
+            "dnr": null
         },
         {
             "brkfst": 8.783333333333333,
@@ -122,13 +122,13 @@
             "dnr": 19.05
         },
         {
-            "brkfst": NaN,
+            "brkfst": null,
             "lnch": 13.366666666666667,
             "dnr": 19.183333333333334
         },
         {
             "brkfst": 7.583333333333333,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 18.533333333333335
         },
         {
@@ -138,13 +138,13 @@
         },
         {
             "brkfst": 7.5,
-            "lnch": NaN,
-            "dnr": NaN
+            "lnch": null,
+            "dnr": null
         },
         {
-            "brkfst": NaN,
-            "lnch": NaN,
-            "dnr": NaN
+            "brkfst": null,
+            "lnch": null,
+            "dnr": null
         }
     ],
     [
@@ -155,7 +155,7 @@
         },
         {
             "brkfst": 8.35,
-            "lnch": NaN,
+            "lnch": null,
             "dnr": 20.533333333333335
         },
         {
