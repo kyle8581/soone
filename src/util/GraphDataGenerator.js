@@ -1,6 +1,6 @@
 import { getActivityData, getExerciseData, getMealData, getMedicineData, getSleepData, getToiletData } from "./DataParser";
 
-// 점수
+// 점수 그래프
 export const getScoreGraphData = (id) => {
     const sleepData = getSleepData(id);
     const mealData = getMealData(id);
@@ -35,6 +35,20 @@ export const getScoreGraphData = (id) => {
     ];
 
     return scoreData;
+};
+
+// 분석 그래프
+export const getSleepLengthGraphData = (id) => {
+    const sleepDailyData = getSleepData(id).daily;
+
+    var graphData = [];
+    for (const week of sleepDailyData) {
+        for (const day of week) {
+            graphData.push({ day: graphData.length + 1, index: 1, length: day.length });
+        }
+    }
+
+    return graphData;
 };
 
 // 일별 그래프

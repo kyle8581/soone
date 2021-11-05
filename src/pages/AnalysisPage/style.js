@@ -11,3 +11,15 @@ export const ContentContainer = styled.div`
     box-sizing: border-box;
     gap: 30px;
 `
+
+export const Column = styled.div`
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px;
+`
+export const Description = styled.p`
+    margin: 0;
+    font-size: 0.9rem;
+    color: black;
+`

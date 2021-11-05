@@ -1,13 +1,20 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import { Container, ContentContainer } from "./style";
+import { getSleepData } from "../../util/DataParser";
+import { getSleepLengthGraphData } from "../../util/GraphDataGenerator";
+
+import { Container, ContentContainer, Column, Description } from "./style";
 import Header from "../../components/Header";
 import BigCard from "../../components/BigCard";
 import Tab from "../../components/Tab";
+import BubbleChartComp from "../../graph/BubbleChartComp";
 
 function AnalysisPage(props) {
     const { id } = useParams();
+
+    const sleepSummaryData = getSleepData(id).summary;
+    const sleepLengthGraphData = getSleepLengthGraphData(id); 
 
     const goDetail = (type) => props.history.push(`/${id}/detail/${type}`); 
 
@@ -16,7 +23,11 @@ function AnalysisPage(props) {
             <Header user={id}/>
             <ContentContainer>
                 <BigCard title="수면" onClick={() => goDetail('sleep')}>
-                    Content
+                    <Column>
+                        <Description>보통 {sleepSummaryData.avg_down.toFixed(0)}시에 주무시고 {sleepSummaryData.avg_up.toFixed(0)}시에 일어나시네요!</Description>
+                        <BubbleChartComp data={sleepLengthGraphData}/>
+                        <Description>평균적으로 {sleepSummaryData.avg_length.toFixed(1)}시간 주무시네요!</Description>
+                    </Column>
                 </BigCard>
                 <BigCard title="식사" onClick={() => goDetail('meal')}>
                     Content
