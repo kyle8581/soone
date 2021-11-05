@@ -71,3 +71,13 @@ export const Divider = styled.div`
     height: 20px;
     background-color: #00000020;
 `
+
+export const List = styled.div`
+    flex: 3 3 0;
+    display: flex;
+    flex-flow: column nowrap;
+`
+export const ListElement = styled.p`
+    margin: 0 20px;
+    font-size: 0.9rem;
+`
