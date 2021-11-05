@@ -59,3 +59,15 @@ export const Column = styled.div`
     flex-flow: column nowrap;
     align-items: center;
 `
+
+export const Element = styled.p`
+    flex: 1 1 0;
+    margin: 0;
+    font-size: 0.9rem;
+    text-align: center;
+`
+export const Divider = styled.div`
+    width: 1px;
+    height: 20px;
+    background-color: #00000020;
+`
