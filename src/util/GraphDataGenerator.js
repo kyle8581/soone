@@ -1,5 +1,6 @@
 import { getActivityData, getExerciseData, getMealData, getMedicineData, getSleepData, getToiletData } from "./DataParser";
 
+// 점수
 export const getScoreGraphData = (id) => {
     const sleepData = getSleepData(id);
     const mealData = getMealData(id);
@@ -36,6 +37,7 @@ export const getScoreGraphData = (id) => {
     return scoreData;
 };
 
+// 일별 그래프
 export const getSleepDailyGraphData = (id, week) => {
     const sleepDailyData = getSleepData(id).daily;
 
@@ -46,11 +48,30 @@ export const getSleepDailyGraphData = (id, week) => {
 
     return graphData;
 };
-
 export const getToiletDailyGraphData = (id, week) => {
     const toiletDailyData = getToiletData(id).daily;
 
     const selectedData = toiletDailyData[week];
+    const graphData = selectedData.map((data, index) => {
+        return { day: `${week * 7 + index + 1}일`, count: data.length };
+    });
+
+    return graphData;
+};
+export const getExerciseDailyGraphData = (id, week) => {
+    const exerciseDailyData = getExerciseData(id).daily;
+
+    const selectedData = exerciseDailyData[week];
+    const graphData = selectedData.map((data, index) => {
+        return { day: `${week * 7 + index + 1}일`, count: data.length };
+    });
+
+    return graphData;
+};
+export const getMedicineDailyGraphData = (id, week) => {
+    const medicineDailyData = getMedicineData(id).daily;
+
+    const selectedData = medicineDailyData[week];
     const graphData = selectedData.map((data, index) => {
         return { day: `${week * 7 + index + 1}일`, count: data.length };
     });
