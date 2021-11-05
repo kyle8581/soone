@@ -78,3 +78,16 @@ export const getMedicineDailyGraphData = (id, week) => {
 
     return graphData;
 };
+
+// 순이 활동
+export const getSonneActivityGraphData = (id) => {
+    const sooneActivityData = getActivityData(id).sooneSummary;
+
+    const graphData = [
+        { name: '힐링 프로그램', value: sooneActivityData.soone_healing },
+        { name: '미디어 프로그램', value: sooneActivityData.soone_media },
+        { name: '운동 프로그램', value: sooneActivityData.soone_workout },
+    ];
+
+    return graphData;
+};

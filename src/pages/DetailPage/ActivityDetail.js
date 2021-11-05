@@ -2,18 +2,19 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 
 import { getActivityData } from "../../util/DataParser";
+import { getSonneActivityGraphData } from "../../util/GraphDataGenerator";
 
 import { Container, Header, Title, BackButton, ContentContainer, Row, Element, List, ListElement, Divider } from "./style";
 import BigCard from "../../components/BigCard";
 import WeekSelector from "../../components/WeekSelector";
+import SimplePieChartComp from "../../graph/SimplePieChartComp";
 
 function ActivityDetail(props) {
     const { id } = useParams();
     const [week, setWeek] = useState(0);
 
-    const activityData = getActivityData(id);
-    const daily = activityData.daily;
-    const sooneActivity = activityData.sooneSummary;
+    const daily = getActivityData(id).daily;
+    const sooneActivityGraphData = getSonneActivityGraphData(id);
 
     const goBack = () => props.history.goBack();
     
@@ -39,7 +40,7 @@ function ActivityDetail(props) {
                     <WeekSelector week={week} setWeek={setWeek}/>
                 </BigCard>
                 <BigCard title="순이 활동">
-                    Content
+                    <SimplePieChartComp data={sooneActivityGraphData}/>
                 </BigCard>
             </ContentContainer>
         </Container>
