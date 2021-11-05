@@ -22,8 +22,8 @@ function RankPage(props) {
                     {
                         rankData.map((user, index) => (
                             <Row key={index}>
-                                <Rank checked={id * 1 === user}>{index + 1}위</Rank>
-                                <Detail checked={id * 1 === user}>{user}번</Detail>
+                                <Rank checked={id === user}>{index + 1}위</Rank>
+                                <Detail checked={id === user}>{user}번</Detail>
                             </Row>
                         ))
                     }
