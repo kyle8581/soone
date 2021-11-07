@@ -86,15 +86,17 @@ export const getMedicineTimeGraphData = (id) => {
     return graphData;
 };
 export const getActivityPercentageGraphData = (id) => {
-    const activitySummaryData = getActivityData(id).summary;
+    const activityData = getActivityData(id);
+    const activityPercentData = activityData.summary[1];
+    const activityPercentDataAll = activityData.all[1];
 
     const graphData = [
-        { type: '미디어', percent: activitySummaryData[1].media },
-        { type: '운동', percent: activitySummaryData[1].workout },
-        { type: '힐링', percent: activitySummaryData[1].healing },
-        { type: '공부', percent: activitySummaryData[1].study },
-        { type: '참여', percent: activitySummaryData[1].part },
-        { type: '외출', percent: activitySummaryData[1].out },
+        { habit: '미디어', me: activityPercentData.media, all: activityPercentDataAll.media },
+        { habit: '운동', me: activityPercentData.workout, all: activityPercentDataAll.workout },
+        { habit: '힐링', me: activityPercentData.healing, all: activityPercentDataAll.healing },
+        { habit: '공부', me: activityPercentData.study, all: activityPercentDataAll.study },
+        { habit: '참여', me: activityPercentData.part, all: activityPercentDataAll.part },
+        { habit: '외출', me: activityPercentData.out, all: activityPercentDataAll.out },
     ];
 
     return graphData;

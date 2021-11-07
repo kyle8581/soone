@@ -24,3 +24,9 @@ export const Description = styled.p`
     color: black;
     text-align: center;
 `
+
+export const Divider = styled.div`
+    width: 100%;
+    height: 1px;
+    background-color: #00000020;
+`
