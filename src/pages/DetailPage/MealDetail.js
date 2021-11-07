@@ -30,9 +30,9 @@ function MealDetail(props) {
                                 <Row key={index}>
                                     <Element>{week * 7 + index + 1}일</Element>
                                     <Divider/>
-                                    <Element>{data.brkfst?.toFixed(0) || "?"}시</Element>
-                                    <Element>{data.lnch?.toFixed(0) || "?"}시</Element>
-                                    <Element>{data.dnr?.toFixed(0) || "?"}시</Element>
+                                    <Element>{data.brkfst ? `${data.brkfst.toFixed(0)}시` : "-"}</Element>
+                                    <Element>{data.lnch ? `${data.lnch.toFixed(0)}시` : "-"}</Element>
+                                    <Element>{data.dnr ? `${data.dnr.toFixed(0)}시` : "-"}</Element>
                                 </Row>
                             ))
                     }
