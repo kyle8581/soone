@@ -22,4 +22,5 @@ export const Description = styled.p`
     margin: 0;
     font-size: 0.9rem;
     color: black;
+    text-align: center;
 `

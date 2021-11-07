@@ -50,6 +50,41 @@ export const getSleepLengthGraphData = (id) => {
 
     return graphData;
 };
+export const getToiletTimeGraphData = (id) => {
+    const toiletSummaryData = getToiletData(id).summary;
+
+    const graphData = [
+        { name: `${toiletSummaryData.top_5[0]}시`, percent: 10 },
+        { name: `${toiletSummaryData.top_5[1]}시`, percent: 9 },
+        { name: `${toiletSummaryData.top_5[2]}시`, percent: 8 },
+        { name: `${toiletSummaryData.top_5[3]}시`, percent: 7 },
+        { name: `${toiletSummaryData.top_5[4]}시`, percent: 6 },
+    ];
+
+    return graphData;
+};
+export const getExerciseTimeGraphData = (id) => {
+    const exerciseSummaryData = getExerciseData(id).summary;
+
+    const graphData = [
+        { name: `${exerciseSummaryData.top_3[0]}시`, percent: 3 },
+        { name: `${exerciseSummaryData.top_3[1]}시`, percent: 2 },
+        { name: `${exerciseSummaryData.top_3[2]}시`, percent: 1 },
+    ];
+
+    return graphData;
+};
+export const getMedicineTimeGraphData = (id) => {
+    const medicineSummaryData = getMedicineData(id).summary;
+
+    const graphData = [
+        { name: `${medicineSummaryData.top_3[0]}시`, percent: 3 },
+        { name: `${medicineSummaryData.top_3[1]}시`, percent: 2 },
+        { name: `${medicineSummaryData.top_3[2]}시`, percent: 1 },
+    ];
+
+    return graphData;
+};
 
 // 일별 그래프
 export const getSleepDailyGraphData = (id, week) => {
