@@ -7,6 +7,7 @@ export const getMaxActivity = (data) => {
         { type: '참여', percent: data[1].part },
         { type: '외출', percent: data[1].out },
     ];
-
-    return activities.sort((a, b) => a.percent < b.percent)[0];
+    activities.sort(function(a, b) { return b.percent - a.percent });
+    
+    return activities[0];
 };
