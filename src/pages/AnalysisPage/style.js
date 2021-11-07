@@ -30,3 +30,10 @@ export const Divider = styled.div`
     height: 1px;
     background-color: #00000020;
 `
+
+export const Bar = styled.div`
+    width: 100%;
+    height: 20px;
+    background: ${props => `linear-gradient(to right, skyblue 0%, skyblue ${props.degree}%, lightgray ${props.degree}%, lightgray 100%)`} ;
+    border-radius: 10px;
+`

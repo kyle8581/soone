@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
-import { getActivityData, getExerciseData, getMealData, getMedicineData, getSleepData, getToiletData } from "../../util/DataParser";
+import { getActivityData, getChatData, getExerciseData, getMealData, getMedicineData, getSleepData, getToiletData } from "../../util/DataParser";
 import { getActivityPercentageGraphData, getExerciseTimeGraphData, getMedicineTimeGraphData, getSleepLengthGraphData, getToiletTimeGraphData } from "../../util/GraphDataGenerator";
 import { getMaxActivity } from "../../util/MaxActivityParser";
 
-import { Container, ContentContainer, Column, Description, Divider } from "./style";
+import { Container, ContentContainer, Column, Description, Divider, Bar } from "./style";
 import Header from "../../components/Header";
 import BigCard from "../../components/BigCard";
 import Tab from "../../components/Tab";
@@ -22,6 +22,7 @@ function AnalysisPage(props) {
     const exerciseData = getExerciseData(id);
     const medicineData = getMedicineData(id);
     const activityData = getActivityData(id);
+    const chatSummaryData = getChatData(id).summary;
 
     const sleepLengthGraphData = getSleepLengthGraphData(id); 
     const toiletTimeGraphData = getToiletTimeGraphData(id);
@@ -109,7 +110,12 @@ function AnalysisPage(props) {
                     </Column>
                 </BigCard>
                 <BigCard title="순이와의 대화" onClick={() => props.history.push(`/${id}/chat`)}>
-                    Content
+                    <Column>
+                        <Bar degree={(chatSummaryData.pos_score * 100).toFixed(0)}/>
+                        <Description>
+                            순이와 대화하며 {chatSummaryData.dis_sc.toFixed(0)}점의 참여도를 보여주시고 {(chatSummaryData.pos_score * 100).toFixed(0)}점의 긍정 점수를 얻으셨어요!
+                        </Description>
+                    </Column>
                 </BigCard>
             </ContentContainer>
             <Tab id={id} selected={1}/>
