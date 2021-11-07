@@ -44,7 +44,7 @@ export const getSleepLengthGraphData = (id) => {
     var graphData = [];
     for (const week of sleepDailyData) {
         for (const day of week) {
-            graphData.push({ day: graphData.length + 1, index: 1, length: day.length });
+            graphData.push({ day: graphData.length + 1, index: 1, value: day.length });
         }
     }
 
@@ -81,6 +81,20 @@ export const getMedicineTimeGraphData = (id) => {
         { name: `${medicineSummaryData.top_3[0]}시`, percent: 3 },
         { name: `${medicineSummaryData.top_3[1]}시`, percent: 2 },
         { name: `${medicineSummaryData.top_3[2]}시`, percent: 1 },
+    ];
+
+    return graphData;
+};
+export const getActivityPercentageGraphData = (id) => {
+    const activitySummaryData = getActivityData(id).summary;
+
+    const graphData = [
+        { type: '미디어', percent: activitySummaryData[1].media },
+        { type: '운동', percent: activitySummaryData[1].workout },
+        { type: '힐링', percent: activitySummaryData[1].healing },
+        { type: '공부', percent: activitySummaryData[1].study },
+        { type: '참여', percent: activitySummaryData[1].part },
+        { type: '외출', percent: activitySummaryData[1].out },
     ];
 
     return graphData;

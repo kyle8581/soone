@@ -2,13 +2,15 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 import { getExerciseData, getMealData, getMedicineData, getSleepData, getToiletData } from "../../util/DataParser";
-import { getExerciseTimeGraphData, getMedicineTimeGraphData, getSleepLengthGraphData, getToiletTimeGraphData } from "../../util/GraphDataGenerator";
+import { getActivityPercentageGraphData, getExerciseTimeGraphData, getMedicineTimeGraphData, getSleepLengthGraphData, getToiletTimeGraphData } from "../../util/GraphDataGenerator";
 
 import { Container, ContentContainer, Column, Description } from "./style";
 import Header from "../../components/Header";
 import BigCard from "../../components/BigCard";
 import Tab from "../../components/Tab";
+import SimpleAreaChartComp from "../../graph/SimpleAreaChartComp";
 import TreeMapChartComp from "../../graph/TreeMapChartComp";
+import SimpleRadarChartComp from "../../graph/SimpleRadarChartComp";
 
 function AnalysisPage(props) {
     const { id } = useParams();
@@ -23,6 +25,7 @@ function AnalysisPage(props) {
     const toiletTimeGraphData = getToiletTimeGraphData(id);
     const exerciseTimeGraphData = getExerciseTimeGraphData(id);
     const medicineTimeGraphData = getMedicineTimeGraphData(id);
+    const activityPercentageGraphData = getActivityPercentageGraphData(id);
 
     const goDetail = (type) => props.history.push(`/${id}/detail/${type}`); 
 
@@ -33,7 +36,7 @@ function AnalysisPage(props) {
                 <BigCard title="수면" onClick={() => goDetail('sleep')}>
                     <Column>
                         <Description>보통 {sleepSummaryData.avg_down.toFixed(0)}시에 주무시고 {sleepSummaryData.avg_up.toFixed(0)}시에 일어나시네요!</Description>
-                        [수면 시간 area graph]
+                        <SimpleAreaChartComp data={sleepLengthGraphData}/>
                         <Description>평균적으로 {sleepSummaryData.avg_length.toFixed(1)}시간 주무시네요!</Description>
                     </Column>
                 </BigCard>
@@ -66,7 +69,7 @@ function AnalysisPage(props) {
                 </BigCard>
                 <BigCard title="활동" onClick={() => goDetail('activity')}>
                     <Column>
-                        [활동 분야 radar graph]
+                        <SimpleRadarChartComp data={activityPercentageGraphData}/>
                     </Column>
                 </BigCard>
                 <BigCard title="순이와의 대화" onClick={() => props.history.push(`/${id}/chat`)}>
