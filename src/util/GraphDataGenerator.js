@@ -108,7 +108,7 @@ export const getSleepDailyGraphData = (id, week) => {
 
     const selectedData = sleepDailyData[week];
     const graphData = selectedData.map((data, index) => {
-        return { day: `${week * 7 + index + 1}일`, start: data.down, length: data.length };
+        return { day: `${week * 7 + index + 1}일`, start: data.down >= 19 ? data.down : data.down + 24, length: data.length };
     });
 
     return graphData;
